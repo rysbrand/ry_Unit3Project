@@ -1,0 +1,226 @@
+/* Rebecca Ysbrand
+    Stylesheet
+    20241101*/
+
+body, header, nav, main, footer, img, h1, ul, aside, figure, figcaption, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+}
+
+/* Style rules for Nav area*/
+
+header {
+    background-color: #FFAECb;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #FFAECb;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+
+
+}
+
+nav li {
+    font-size: 1.5em; 
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+
+}
+
+nav li a {
+    display: block; 
+    color: white; 
+    padding: 0.5em 2em;
+    text-decoration: none;
+}   
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #FFAECb;
+}
+
+img, iframe {
+    width: 100%;
+}
+
+.video-wrapper {
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.video iframe {
+    padding: 2%;
+}
+
+.video figcaption {
+    padding-bottom: 4%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: #FFAECb;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    width:100%;
+    border: 1px solid #FFAECb;
+    padding: 10px;
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffe7ef; 
+}
+
+/* Form styles */
+form {
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 2px solid #FFAECb;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+    color: #FFAECb;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, select{
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 2%;
+    margin: 5px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+/* Media Query for Laptop */
+@media screen and (min-width: 1024px) {
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        margin: 0 auto; 
+    }
+
+    section h2 {
+        font-weight: bold;
+        padding-left: 4%;
+    }
+    p {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    figure image {
+        display: inline-block;
+    }
+
+    img, iframe {
+        width: 80%; 
+        max-width: 600px; 
+    }
+
+    .video-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding: 30px;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+    }
+}
+
+/* Media Query for Desktop (1440px and above) */
+@media screen and (min-width: 1440px) {
+    nav ul {
+       gap: 1em;
+    }
+
+    .video-wrapper, img, iframe {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    form {
+        width: 80%; 
+        margin: 20px auto;
+    }
+
+    form fieldset input{
+        width: 95%;
+        height: 50px;
+    }
+
+    button {
+        width: 30%; 
+        padding: 10px;
+        font-size: 1em;
+        justify-content: center;
+    }
+}
+
